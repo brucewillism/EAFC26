@@ -1,0 +1,13 @@
+{
+  "sessions": [
+    {
+      "time": 1763328203.1068997,
+      "success": true,
+      "warnings": 0,
+      "profile": "normal",
+      "risk_level": "low"
+    }
+  ],
+  "detections": [],
+  "adjustments": []
+}

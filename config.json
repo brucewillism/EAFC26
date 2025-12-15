@@ -1,0 +1,168 @@
+{
+  "screen_resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "trading": {
+    "enabled": true,
+    "use_futbin": true,
+    "description_futbin": "Agora com técnicas anti-detecção avançadas para evitar bloqueios. Se bloquear, usa análise de mercado local automaticamente",
+    "platform": "pc",
+    "strategy": "undervalued",
+    "description": "undervalued = busca jogadores baratos com potencial; targets = busca jogadores específicos",
+    "min_profit": 200,
+    "min_profit_percentage": 15.0,
+    "max_price": 5000,
+    "search_interval": 5,
+    "buy_delay": 2,
+    "sell_delay": 3,
+    "market_monitor_interval": 60,
+    "targets": []
+  },
+  "squad_battles": {
+    "enabled": true,
+    "difficulty": "Ultimate",
+    "auto_play": false,
+    "skip_cutscenes": true,
+    "match_duration": "Half Length",
+    "guarantee_win": true
+  },
+  "game_logic": {
+    "aggressive_mode": true,
+    "defensive_mode": false,
+    "min_goals_ahead": 2,
+    "use_gamepad": true,
+    "prohibit_skill_moves_4_5_stars": true,
+    "possession_extreme_after_2_goals": true,
+    "time_wasting_after_80_min": true,
+    "short_passes_only": true,
+    "description": "Estratégias específicas: passes curtos, posse de bola, cera (80+), sem skill moves 4-5 estrelas"
+  },
+  "human_behavior": {
+    "occasional_pauses": true,
+    "pause_probability": 0.05,
+    "pause_duration_min": 2.0,
+    "pause_duration_max": 8.0,
+    "human_mouse_movements": true,
+    "mouse_curve_intensity": 0.3
+  },
+  "objectives": {
+    "enabled": true,
+    "check_interval": 300
+  },
+  "safety": {
+    "pause_hotkey": "f9",
+    "stop_hotkey": "f10",
+    "emergency_exit": "esc",
+    "random_delays": true,
+    "min_delay": 0.05,
+    "max_delay": 0.2,
+    "description": "Delays in-game: 50-200ms. Delays menus: 1-4s (configurado em game_logic)"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "file": "bot_log.txt"
+  },
+  "anti_detection": {
+    "max_session_hours": 4,
+    "min_break_duration": 1800,
+    "max_break_duration": 7200,
+    "break_probability": 0.15,
+    "avoid_peak_hours": true,
+    "peak_hours_start": 18,
+    "peak_hours_end": 23,
+    "max_daily_matches": 20,
+    "max_daily_trades": 50,
+    "error_probability": 0.02,
+    "weekday_variation": true,
+    "realistic_usage": true
+  },
+  "adaptive_system": {
+    "enabled": true,
+    "auto_adjust": true,
+    "default_profile": "normal",
+    "adaptation_interval": 3600
+  },
+  "kernel_bypass": {
+    "enabled": false,
+    "use_hardware_simulation": true,
+    "add_jitter": true,
+    "timing_variation": true,
+    "min_system_delay": 0.001,
+    "max_system_delay": 0.005,
+    "background_activity": true
+  },
+  "login": {
+    "email": "arthuraxiotes12@gmail.com",
+    "password": "@ArAxSo01",
+    "auto_login": true
+  },
+  "risk": {
+    "mode": "safe",
+    "description": "safe = limites conservadores; normal = padrão; aggressive = mais rápido (maior risco)",
+    "profiles": {
+      "safe": {
+        "max_daily_trades": 30,
+        "max_daily_matches": 6,
+        "min_delay": 1.0,
+        "max_delay": 3.0,
+        "coin_transfer_enabled": false
+      },
+      "normal": {
+        "max_daily_trades": 40,
+        "max_daily_matches": 8,
+        "min_delay": 0.8,
+        "max_delay": 2.5,
+        "coin_transfer_enabled": false
+      },
+      "aggressive": {
+        "max_daily_trades": 50,
+        "max_daily_matches": 10,
+        "min_delay": 0.5,
+        "max_delay": 2.0,
+        "coin_transfer_enabled": false
+      }
+    }
+  },
+  "team": {
+    "name": "Bot Team",
+    "auto_create": true
+  },
+  "account": {
+    "type": "secondary",
+    "description": "main = conta principal, secondary = conta secundária"
+  },
+  "coin_transfer": {
+    "enabled": false,
+    "max_transfer_per_day": 100000,
+    "max_transfer_per_transaction": 50000,
+    "min_delay": 300,
+    "max_delay": 600,
+    "secondary_account": "tecnicobpm@hotmail.com"
+  },
+  "modo_sem_captura": {
+    "enabled": false,
+    "description": "Modo que usa apenas EA Companion App e Futbin, sem precisar do jogo aberto",
+    "limitations": "Funcionalidades limitadas - não pode jogar partidas"
+  },
+  "comfort_trade": {
+    "enabled": false,
+    "description": "⚠️ COMFORT TRADE - Transferência de Coins via Controle de Conta. RISCOS: Banimento, Reset de Coins, Roubo de Credenciais",
+    "transfer_method": "market",
+    "description_methods": "market = compra jogadores listados pelo cliente; farming = joga partidas para farmar coins",
+    "target_coins": 0,
+    "coins_per_transaction": 50000,
+    "transfer_delay_min": 300,
+    "transfer_delay_max": 600,
+    "client_account": {
+      "email": "",
+      "password": "",
+      "backup_codes": [],
+      "description": "⚠️ Credenciais da conta do CLIENTE (não sua conta!). Use apenas se confiar no vendedor!"
+    },
+    "search_filters": {
+      "description": "Filtros para encontrar jogador listado pelo cliente no mercado"
+    }
+  }
+}

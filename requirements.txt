@@ -1,0 +1,11 @@
+pyautogui==0.9.54
+opencv-python==4.8.1.78
+numpy==1.24.3
+Pillow==10.0.1
+pynput==1.7.6
+keyboard==0.13.5
+pywin32==306
+pytesseract==0.3.10
+requests==2.31.0
+Appium-Python-Client==3.1.0
+
